@@ -1,0 +1,37 @@
+@import "../../Constants/cssVariables.scss";
+
+.Card
+{
+    position: relative;
+    width: 310px;
+    height: 400px;
+    border: 2px solid $primaryColor;
+    word-wrap: break-word;
+    margin: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    img
+    {
+        width: 95%;
+        height: 200px;
+        object-fit:cover;
+    }
+
+    button
+    {
+        border: none;
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        background-color: $primaryColor;
+        color: white;
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+}
